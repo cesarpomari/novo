@@ -10,9 +10,7 @@ const Home = props =>
       <p>Por favor, digite um nome para a sala. (opcional)</p>
       <input type="text" name="room" value={ props.roomId } onChange={props.handleChange} pattern="^\w+$" maxLength="10" required autoFocus title="Room name should only contain letters or numbers."/>
       <Link className="primary-button" to={ '/r/' + props.roomId }>Iniciar</Link>
-      <Link className="primary-button" to={ '/r/' + props.defaultRoomId }>Random</Link>
-      { props.rooms.length !== 0 && <div>Sala criadas por você:</div> }
-      { props.rooms.map(room => <Link key={room} className="recent-room" to={ '/r/' + room }>{ room }</Link>) }
+      { props.rooms.length !== 0 && <div>Sala criadas por voce:</div> }
     </div>
   </div>;
 
