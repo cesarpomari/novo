@@ -32,6 +32,9 @@ input[type=text] {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .call-exit-button,
 .hangup-button,
